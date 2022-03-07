@@ -51,7 +51,7 @@ export default function App() {
             path="/login"
             render={(props) => <Login {...props} getUserInfo={getUserInfo} />}
           />
-          <Redirect exact from="/" to="/outlinehome" />
+          <Redirect from="/" to="/outlinehome" />
         </Switch>
       </div>
       <Footer />
