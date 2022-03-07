@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Ahmed-Serag19/movie-db.git/static/css/main.6d8db7c2.css",
-    "main.js": "/Ahmed-Serag19/movie-db.git/static/js/main.2e811ded.js",
-    "index.html": "/Ahmed-Serag19/movie-db.git/index.html",
-    "main.6d8db7c2.css.map": "/Ahmed-Serag19/movie-db.git/static/css/main.6d8db7c2.css.map",
-    "main.2e811ded.js.map": "/Ahmed-Serag19/movie-db.git/static/js/main.2e811ded.js.map"
+    "main.css": "/movie-db/static/css/main.6d8db7c2.css",
+    "main.js": "/movie-db/static/js/main.2e811ded.js",
+    "index.html": "/movie-db/index.html",
+    "main.6d8db7c2.css.map": "/movie-db/static/css/main.6d8db7c2.css.map",
+    "main.2e811ded.js.map": "/movie-db/static/js/main.2e811ded.js.map"
   },
   "entrypoints": [
     "static/css/main.6d8db7c2.css",
