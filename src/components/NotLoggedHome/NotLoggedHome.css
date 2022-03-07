@@ -1,0 +1,25 @@
+.home-not-logged {
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-not-logged img {
+  z-index: 1000;
+}
+
+video {
+  top: 20%;
+  left: 12%;
+}
+.video2 {
+  width: 60%;
+  top: 10%;
+  left: 20%;
+}
+.home-page-sections {
+  border-bottom: grey solid 1px;
+  padding: 20px 0px;
+}

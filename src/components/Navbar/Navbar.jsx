@@ -38,28 +38,30 @@ export default function Navbar(props) {
             ""
           )}
         </ul>
-        <button
-          id="burger-icon"
-          className="btn btn-lg text-white fs-1 display-none"
-          onClick={showLinks}
-        >
-          <GoGrabber />
-        </button>
+        {props.loginUser && (
+          <button
+            id="burger-icon"
+            className="btn btn-lg text-white fs-1 display-none"
+            onClick={showLinks}
+          >
+            <GoGrabber />
+          </button>
+        )}
       </div>
       <ul className="list-unstyled d-flex">
         {props.loginUser ? (
-          <li className="nav-link px-3 cursor-pointer" onClick={props.logout}>
+          <li className="nav-link pe-3 cursor-pointer" onClick={props.logout}>
             Logout
           </li>
         ) : (
           <>
             <li>
-              <NavLink className="nav-link px-3  " to="/login">
+              <NavLink className="nav-link px-2  " to="/login">
                 Login
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link px-3  " to="/register">
+              <NavLink className="nav-link px-2  " to="/register">
                 Register
               </NavLink>
             </li>

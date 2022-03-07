@@ -17,7 +17,7 @@ const Protectedroute = (props) => {
       </Route>
     );
   } else {
-    return <Redirect to="/login" />;
+    return <Redirect to="/outlinehome" />;
   }
 };
 

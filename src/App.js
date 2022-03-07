@@ -10,6 +10,7 @@ import Protectedroute from "./components/ProtectedRoute/ProtectedRoute";
 import Series from "./components/Series/Series";
 import { Redirect } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import NotLoggedHome from "./components/NotLoggedHome/NotLoggedHome";
 
 export default function App() {
   const [loginUser, setLoginUser] = useState(null);
@@ -37,6 +38,9 @@ export default function App() {
   return (
     <>
       <Navbar loginUser={loginUser} logout={logOut} />
+      {!loginUser && (
+        <Route path="/outlinehome" render={() => <NotLoggedHome />} />
+      )}
       <div className="container">
         <Switch>
           <Protectedroute path="/movies" component={Movies} />
@@ -47,7 +51,7 @@ export default function App() {
             path="/login"
             render={(props) => <Login {...props} getUserInfo={getUserInfo} />}
           />
-          <Redirect exact from="/" to="/home" />
+          <Redirect exact from="/" to="/outlinehome" />
         </Switch>
       </div>
       <Footer />

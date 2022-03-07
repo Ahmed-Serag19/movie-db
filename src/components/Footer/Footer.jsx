@@ -10,7 +10,7 @@ export default function Footer() {
   }
   return (
     <footer>
-      <div className="footer-container mt-5">
+      <div className="footer-container pt-5">
         <div className="text-center pt-3">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
