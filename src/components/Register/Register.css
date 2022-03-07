@@ -1,0 +1,32 @@
+.register-page {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn-outline-danger {
+  color: #950740;
+  border-color: #950740;
+}
+.btn-outline-danger:hover {
+  background-color: #950740;
+}
+.alert-danger {
+  color: white;
+  background-color: #950740;
+  padding: 10px;
+}
+
+.spinner {
+  animation: spin infinite 3s linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.display-none {
+  display: none;
+}

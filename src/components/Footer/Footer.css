@@ -1,0 +1,24 @@
+.icon {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: 0.7s all;
+}
+.email-icon {
+  display: inline-block;
+}
+.email-icon:hover {
+  cursor: pointer;
+  color: #950740;
+}
+footer {
+  color: white;
+  background-color: #010102;
+}
+.email-address {
+  transition: 0.7s all;
+  opacity: 0;
+}
+.show-email {
+  opacity: 1;
+}

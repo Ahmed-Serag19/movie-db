@@ -1,0 +1,10 @@
+.series {
+  color: #f7f7f8;
+}
+#top-rated-link {
+  text-decoration: none;
+  color: #950740;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}

@@ -1,0 +1,33 @@
+nav {
+  box-shadow: 0px 0px 10px #4e4e50;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.nav-logo {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #950740;
+  font-size: 1.7rem;
+}
+.nav-logo:hover {
+  color: #c3073f;
+}
+.nav-link {
+  color: #950740;
+  transition: 0.2s all;
+}
+.nav-link:hover {
+  transform: scale(1.2);
+  color: #c3073f;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.show-opacity {
+  opacity: 1;
+}
+#main-nav-links {
+  display: flex;
+  align-items: center;
+}

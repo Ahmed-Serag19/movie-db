@@ -1,0 +1,12 @@
+.home {
+  color: #cacad1;
+}
+.movie img {
+  width: 100%;
+
+  border-radius: 5px;
+}
+.movie h3 {
+  height: 50px;
+}
+

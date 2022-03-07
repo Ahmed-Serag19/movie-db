@@ -1,0 +1,15 @@
+.movies {
+  color: #f7f7f8;
+}
+
+.page ul li {
+  transition: 0.5s all;
+}
+
+.page ul li:hover {
+  color: #950740;
+}
+
+.page ul li {
+  cursor: pointer;
+}

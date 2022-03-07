@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Route, Switch, useHistory } from "react-router-dom";
+import Login from "./components/Login/Login";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+import Register from "./components/Register/Register";
+import jwtDecode from "jwt-decode";
+import Movies from "./components/Movies/Movies";
+import Protectedroute from "./components/ProtectedRoute/ProtectedRoute";
+import Series from "./components/Series/Series";
+import { Redirect } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+export default function App() {
+  const [loginUser, setLoginUser] = useState(null);
+
+  function getUserInfo() {
+    let encodedToken = localStorage.getItem("userToken");
+    let userData = jwtDecode(encodedToken);
+    setLoginUser(userData);
+  }
+
+  useEffect(() => {
+    if (localStorage.getItem("userToken")) {
+      getUserInfo();
+    }
+  }, []);
+
+  let history = useHistory();
+
+  function logOut() {
+    localStorage.removeItem("userToken");
+    setLoginUser(null);
+    history.push("/login");
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar loginUser={loginUser} logout={logOut} />
+      <div className="container">
+        <Switch>
+          <Protectedroute path="/movies" component={Movies} />
+          <Protectedroute path="/series" component={Series} />
+          <Protectedroute path="/home" component={Home} loginUser={loginUser} />
+          <Route path="/register" render={(props) => <Register {...props} />} />
+          <Route
+            path="/login"
+            render={(props) => <Login {...props} getUserInfo={getUserInfo} />}
+          />
+          <Redirect exact from="/" to="/home" />
+        </Switch>
+      </div>
+      <Footer />
+    </>
   );
 }
-
-export default App;
