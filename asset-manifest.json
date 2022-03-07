@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ahmed-Serag19/movie-db.git/static/css/main.6d8db7c2.css",
+    "main.js": "/Ahmed-Serag19/movie-db.git/static/js/main.2e811ded.js",
+    "index.html": "/Ahmed-Serag19/movie-db.git/index.html",
+    "main.6d8db7c2.css.map": "/Ahmed-Serag19/movie-db.git/static/css/main.6d8db7c2.css.map",
+    "main.2e811ded.js.map": "/Ahmed-Serag19/movie-db.git/static/js/main.2e811ded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d8db7c2.css",
+    "static/js/main.2e811ded.js"
+  ]
+}
