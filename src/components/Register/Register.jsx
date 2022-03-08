@@ -45,7 +45,6 @@ export default function Register(props) {
     return schema.validate(userData, { abortEarly: false });
   }
 
-
   async function formSubmit(e) {
     e.preventDefault();
     setLoading(true);
@@ -81,10 +80,9 @@ export default function Register(props) {
     )
   );
 
- 
   return (
     <div className="row">
-      <section className="register-page w-75 mx-auto mt-5 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <section className="register-page w-75 mx-auto my-5 col-lg-8 col-md-8 col-sm-12 col-xs-12">
         <div className="register-success alert alert-primary text-center display-none">
           <h1>Register Success</h1>
         </div>

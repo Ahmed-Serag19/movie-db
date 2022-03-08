@@ -9,9 +9,9 @@ export default function Footer() {
     document.querySelector(".email-address").classList.toggle("show-email");
   }
   return (
-    <footer>
+    <footer className="footer ">
       <div className="footer-container pt-5">
-        <div className="text-center pt-3">
+        <div className="text-center pt-2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             impedit earum quaerat sed, dolore voluptate? 2021-2022

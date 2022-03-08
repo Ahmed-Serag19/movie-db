@@ -61,7 +61,7 @@ export default function Login(props) {
   }
 
   return (
-    <section className="login-page w-75 mx-auto mt-5 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+    <section className="login-page w-75 mx-auto my-5 col-lg-8 col-md-8 col-sm-12 col-xs-12">
       <div className="pt-4 w-75 m-auto">
         {error && <div className="alert alert-danger">{error}</div>}
         {errorList.map((error) => (

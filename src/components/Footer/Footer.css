@@ -11,14 +11,20 @@
   cursor: pointer;
   color: #950740;
 }
+
 footer {
   color: white;
   background-color: #101013;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* top: 100%; */
 }
 .email-address {
-  transition: 0.7s all;
-  opacity: 0;
+  transition: 0.1s all;
+  display: none;
 }
 .show-email {
-  opacity: 1;
+  display: inline-block;
 }

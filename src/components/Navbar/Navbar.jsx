@@ -56,12 +56,12 @@ export default function Navbar(props) {
         ) : (
           <>
             <li>
-              <NavLink className="nav-link px-2  " to="/login">
+              <NavLink className="nav-link me-3  " to="/login">
                 Login
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link px-2  " to="/register">
+              <NavLink className="nav-link me-3  " to="/register">
                 Register
               </NavLink>
             </li>

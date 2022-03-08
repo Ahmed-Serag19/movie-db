@@ -51,10 +51,10 @@ export default function App() {
             path="/login"
             render={(props) => <Login {...props} getUserInfo={getUserInfo} />}
           />
-          <Redirect from="/" to="/outlinehome" />
         </Switch>
       </div>
       <Footer />
+      <Redirect from="/" exact to="/outlinehome" />
     </>
   );
 }
