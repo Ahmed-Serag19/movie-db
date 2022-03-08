@@ -55,7 +55,6 @@ export default function App() {
       </div>
       <Footer />
       <Redirect from="/" to="/outlinehome" />
-      <Redirect from="/movieDb/" to="/outlinehome" />
     </>
   );
 }
