@@ -54,7 +54,8 @@ export default function App() {
         </Switch>
       </div>
       <Footer />
-      <Redirect from="/" exact to="/outlinehome" />
+      <Redirect from="/" to="/outlinehome" />
+      <Redirect from="/movieDb/" to="/outlinehome" />
     </>
   );
 }
